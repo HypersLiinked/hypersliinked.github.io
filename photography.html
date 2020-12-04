@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style1.css">
+        <link rel="stylesheet" href="css/style2.css">
+        <title>Hypers Liinked</title>
+    </head>
+    <body>
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="index.html" class="nav__logo">HL</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <div class="nav__close">
+                        <ion-icon name="close-outline" class="nav__close-icon" id="nav-close"></ion-icon>
+                    </div>
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="portfolio.html" class="nav__link">Portfolio</a></li>
+                        <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+            </nav>
+        </header>
+        <main class="l-main bd-grid main">
+            <div class="portfolio-block">
+                <h2 class="portfolio-header">Photos</h2>
+                <p class="portfolio-subtitle">Click to enlarge↓</p>
+
+                <div class="gallery" id="gallery">
+                    <div class="gallery-item">
+                        <div class="content"><img src="https://source.unsplash.com/3MraG4zg2_c" alt=""></div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="content"><img src="https://source.unsplash.com/8QkosqMi8r4" alt=""></div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="content"><img src="https://source.unsplash.com/V7jXTZ5Gkq8" alt=""></div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="content"><img src="https://source.unsplash.com/GyIy5ggK6Mg" alt=""></div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="content"><img src="https://source.unsplash.com/WeAiAK8Q6oE" alt=""></div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="content"><img src="https://source.unsplash.com/T2ZfiOzAlyc" alt=""></div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="content"><img src="https://source.unsplash.com/hlw9Xb0JISc" alt=""></div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="content"><img src="https://source.unsplash.com/tXmLs7Vh1h8" alt=""></div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="content"><img src="https://source.unsplash.com/0_rhXuk98FU" alt=""></div>
+                    </div>
+                    
+
+                </div>
+            </div> 
+        </main>
+        <!-- MAIN -->
+        <script src="js/main.js"></script>
+        <script src="js/main1.js"></script>
+        <!-- GSAP -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+
+        <!-- THREE JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/108/three.min.js"
+                integrity="sha256-3mBEX8I0uMLF7+AUjJeTCelosuorzYpqwBMBPDTyQqY=" crossorigin="anonymous"></script>
+
+        <!-- HOVER-EFFECT JS -->
+        <script src="js/hover-effect.umd.js"></script>
+
+        <!-- ICONOS -->
+        <script  type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
+
+        <script>
+/* NAV, TITLE Y IMG y*/
+gsap.from('.nav', {opacity: 0, duration: 1, delay:1, y: -30})
+gsap.from('.home__title', {opacity: 0, duration: 1.2, delay:1.2, y: -30})
+gsap.from('.home__img', {opacity: 0, duration: 1.3, delay:1.3, y: -50})
+
+/*SOCIAL, SUBTITLE Y BUTTON*/
+gsap.from('.portfolio-header', {opacity: 0, duration: 1, delay:1.4, y: 50})
+gsap.from('.portfolio-subtitle', {opacity: 0, duration: 1, delay:1.9, y: 50})
+gsap.from('.portfolio-cards', {opacity: 0, duration: 1, delay: 1.7, y: 50})
+        </script>
+    </body>
+</html>

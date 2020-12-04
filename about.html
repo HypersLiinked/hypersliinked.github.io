@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+
+        <link rel="stylesheet" href="css/style.css">
+
+        <link rel="stylesheet" href="css/style4.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+
+        <title>Hypers Liinked</title>
+    </head>
+    <body>
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="index.html" class="nav__logo">HL</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <div class="nav__close">
+                    </div>
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="portfolio.html" class="nav__link">Portfolio</a></li>
+                        <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+            </nav>
+        </header>
+        <main class="l-main bd-grid main">
+            <div class="team-section">
+                <div class="inner-width">
+
+                    <p>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspHypers Linked is a venture by Team of 3 people based out of coimbatore, Tamilnadu. We are evenly interested in different genres and willing to experiment on different scripts. We have created 5 shortfilms and a musical video. In our projects we had worked on production, writing, editing & grading. We recently received 5 awards  in the categories Best film, Best Cinematography, Best female lead, Best sound design in Covai vizha 2019 and Best writing for our shortfilm SHAMBAVI in NizhalPadavi Awards 2019. As a young and passionate team with excellent process we are all set to deliver films that would make our mark.
+
+                    </p>
+                    <h1>Meet Our Team</h1>
+                    <div class="pers">
+
+
+                        <div class="pe">
+                            <img src="img/1.jpg" alt="">
+                            <div class="p-name">Kuzhal Prakash</div>
+                            <div class="p-sm">
+                                <a href="tel:+916381251172"><i class='fas fa-mobile-alt' style='font-size:24px'></i>
+                                    <a href="https://www.instagram.com/kuzhal_prakash/"><i class="fab fa-instagram" style='font-size:24px'></i></a>
+                                    </div>
+                            </div>
+
+                            <div class="pe">
+                                    <img src="img/3.jpg" alt="">
+                                    <div class="p-name">Saaiganesh Ilangovan</div>
+                                    <div class="p-sm">
+                                        <a href="tel:+918056669599"><i class='fas fa-mobile-alt' style='font-size:24px'></i>
+                                            <a href="https://www.instagram.com/saaiganesh_varalakshmi/"><i class="fab fa-instagram" style='font-size:24px'></i></a>
+                                            </div>
+                                    </div>
+                                
+                            <div class="pe">
+                                <img src="img/2.jpg" alt="">
+                                <div class="p-name">Rindo Alexander</div>
+                                <div class="p-sm">
+                                    <a href="tel:+919677506336"><i class='fas fa-mobile-alt' style='font-size:24px'></i>
+                                        <a href="https://www.instagram.com/r_i_alex_/"><i class="fab fa-instagram" style='font-size:24px'></i></a>
+                                        </div>
+                                </div>
+
+                                
+
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+                        </main>
+
+                    <!-- MAIN -->
+                    <script src="js/main.js"></script>
+
+                    <!-- GSAP -->
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+
+                    <!-- THREE JS -->
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/108/three.min.js"
+                            integrity="sha256-3mBEX8I0uMLF7+AUjJeTCelosuorzYpqwBMBPDTyQqY=" crossorigin="anonymous"></script>
+
+                    <!-- HOVER-EFFECT JS -->
+                    <script src="js/hover-effect.umd.js"></script>
+
+                    <!-- ICONOS -->
+                    <script  type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
+
+                    <script>
+new hoverEffect({
+    parent: document.querySelector('.home__img'),
+    intensity: 0.3,
+    image1: 'img/nata-main.jpg',
+    image2: 'img/nata.jpg',
+    displacementImage: 'img/diss.png',
+    imagesRatio: 450 / 300
+})
+
+/* NAV, TITLE Y IMG y*/
+gsap.from('.nav', {opacity: 0, duration: 1, delay:1, y: -30})
+gsap.from('.home__title', {opacity: 0, duration: 1.2, delay:1.2, y: -30})
+gsap.from('.home__img', {opacity: 0, duration: 1.3, delay:1.3, y: -50})
+
+/*SOCIAL, SUBTITLE Y BUTTON*/
+gsap.from('.link-header', {opacity: 0, duration: 1, delay:1.5, y: 50})
+gsap.from('.link', {opacity: 0, duration: 1, delay: 1.6, y: 50})
+                    </script>
+                    </body>
+                </html>
